@@ -32,7 +32,7 @@ docker run --detach
 gasapp
 
 
-In my case :
+# In my case :
 
 root@GOJODISK2:/volume1/docker/___FluviusGasDemo-V1# docker network ls
 NETWORK ID          NAME                DRIVER              SCOPE

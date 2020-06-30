@@ -10,7 +10,7 @@ ip route |grep default
 # In my case it returns :
 # default via 192.168.1.1 dev eth0  src 192.168.1.201
 # subnet 255.255.255.0   => 192.168.1.0/24
-# for ip-range choose a not occupied ip-adress with /32 for mac-vlan netwoek with only 1 ip-adres
+# for ip-range choose a not occupied ip-adress with /32 for mac-vlan network with only 1 ip-adres
 
 # We need eth0 in next command :
 docker network create --driver=macvlan --gateway=192.168.1.1 --subnet=192.168.1.0/24 --ip-range=192.168.1.254/32 -o parent=eth0 VLAN_web
